@@ -1,0 +1,37 @@
+
+.inicio {
+  width: 100%;
+}
+
+.etiqueta {
+  display: inline-block;
+  background-color: #9d9167;
+  color: #442d1c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+.titulo {
+  color: #442d1c;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.descripcion {
+  color: #743014;
+  line-height: 1.7;
+}
+
+.subtitulo {
+  color: #442d1c;
+  border-bottom: 2px solid #9d9167;
+  padding-bottom: 12px;
+}
+
+.textoSeccion {
+  color: #84592b;
+  line-height: 1.6;
+}

@@ -1,0 +1,26 @@
+.header {
+    background-color: #442d1c;
+    color: #e8d1a7;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgb(68 45 28 / 15%);
+}
+.navLink {
+    display: inline-block;
+    color: #e8d1a7;
+    text-decoration:none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease,
+    color 0.2s ease;
+}
+.navLink:hover {
+    background-color: #84592b;
+    color: #ffffff;
+}
+.navLink.focus-visible {
+    outline: 2px solid #e8d1a7;
+    outline-offset: 3px;
+}

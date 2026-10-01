@@ -1,0 +1,75 @@
+[
+    {
+        "id" : 1,
+        "nombre" : "El nombre de la rosa",
+        "precio" : 10000,
+        "stock" : 8,
+        "imagen": "/images/rosa.jpg",
+        "urlImagen": "https://i.ibb.co/1Gqf9VBg/rosa.jpg"
+    },
+    {
+        "id" : 2,
+        "nombre" : "El perfume",
+        "precio" : 15000,
+        "stock" : 5,
+        "imagen": "/images/perfume.jpg",
+        "urlImagen": "https://i.ibb.co/NdQL9mgM/pef.jpg"
+    },
+    {
+        "id" : 3,
+        "nombre" : "Cianuro espumoso",
+        "precio" : 12000,
+        "stock" : 10,
+        "imagen": "/images/cianuro.jpg",
+        "urlImagen": "https://i.ibb.co/JWQYp0nW/cian.jpg"
+    },
+    {
+        "id" : 4,
+        "nombre" : "Mujercitas",
+        "precio" : 20000,
+        "stock" : 3,
+        "imagen": "/images/mujercitas.jpg",
+        "urlImagen": "https://i.ibb.co/PBRDf4b/mujercitas.jpg"
+    },
+    {
+        "id" : 5,
+        "nombre" : "Boquitas pintadas",
+        "precio" : 18000,
+        "stock" : 7,
+        "imagen": "/images/boquitas.jpg",
+        "urlImagen":"https://i.ibb.co/5gyx2jCn/boquitas.jpg"
+    },
+    {
+        "id" : 6,
+        "nombre" : "El gran Gatsby",
+        "precio" : 25000,
+        "stock" : 4,
+        "imagen": "/images/gatsby.jpg",
+        "urlImagen":"https://i.ibb.co/SXGFvR5Q/gats.jpg"
+    },
+    {
+        "id" : 7,
+        "nombre" : "Cien años de soledad",
+        "precio" : 30000,
+        "stock" : 6,
+        "imagen": "/images/cien.jpg",
+        "urlImagen":"https://i.ibb.co/s9rjSNpD/cien.jpg"
+    },
+    {
+        "id" : 8,
+        "nombre" : "El beso de la mujer araña",
+        "precio" : 22000,
+        "stock" : 9,
+        "imagen": "/images/beso.jpg",
+        "urlImagen":"https://i.ibb.co/NnQbtnYN/beso.jpg"
+    },
+    {
+        "id": 1,
+        "nombre": "Ana de las Tejas Verdes",
+        "precio": 10000,
+        "stock":10,
+        "imagen": "/images/ana.jpg",
+        "urlImagen": "https://i.ibb.co/V0YmxK6z/ana.jpg"
+    }
+    
+]

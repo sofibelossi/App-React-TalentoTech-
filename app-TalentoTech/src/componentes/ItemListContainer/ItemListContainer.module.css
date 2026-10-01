@@ -1,0 +1,26 @@
+.contenedor {
+    padding: 16px 0;
+}
+.encabezado {
+    text-align:center;
+    margin-bottom: 32px;
+    color: 442d1c;
+}
+.subtitulo {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: 743014;
+    font-size:0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.encabezado h2 {
+    margin: 0 0 12px;
+    color: 442d1c;
+}
+.descripcion {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #66543d;
+    line-height: 1.7;
+}

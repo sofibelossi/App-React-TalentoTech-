@@ -1,0 +1,106 @@
+.tarjeta {
+    border: 1px solid #9d9167;
+    border-radius: 16px;
+    text-align: center;
+    color: #442d1c;
+    box-shadow: 0 4px 12px rgb(68 45 28 / 8%);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-width:0;
+}
+.tarjeta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgb(68 45 28 / 16%);
+}
+.etiqueta {
+    display: inline-block;
+    background-color: #e8d1a7;
+    color: #743014;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    padding: 6px 10px;
+    border-radius:20px;
+    margin-bottom:16px;
+}
+.nombre {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+    min-height: 3.3em;
+    margin: 0 0 12px;
+    overflow-wrap: anywhere;
+}
+.precio {
+    color: #743014;
+    font-size:1.6rem;
+    font-weight:800;
+    margin: 0 0 12px;
+}
+.stock {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 8px;
+    color: #66543d;
+    font-size:0.9rem;
+    margin: 0 0 20px;
+}
+.punto {
+    width: 8px;
+    height: 8px;
+    background-color: #84592b;
+    border-radius: 50%;
+}
+.controles {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.botonCantidad {
+    width: 38px;
+    height: 38px;
+    background-color: #e8d1a7;
+    color: #442d1c;
+    border: 1px solid #84592b;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.botonCantidad:hover:not(:disabled) {
+    background-color: #9d9167;
+}
+.botonCantidad:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.cantidad {
+    min-width: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.botonCarrito { 
+    margin-top: auto;
+    border:none;
+    border-radius:10px;
+    background-color: #743014;
+    color: #e8d1a7;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.botonCarrito:hover {
+    background-color: #442d1c;
+    transform: scale(1.02);
+}
+.botonCarrito:focus-visible,
+.botonCantidad:focus-visible {
+    outline: 3px solid #9d9167;
+    outline-offset: 3px;
+}

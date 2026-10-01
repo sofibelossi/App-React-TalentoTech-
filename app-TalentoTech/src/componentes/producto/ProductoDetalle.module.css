@@ -1,0 +1,138 @@
+.contenedor {
+    padding: 16px 0 32px;
+    color: #442d1c;
+}
+
+.volver {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #743014;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.volver:hover {
+    color: #84592b;
+    text-decoration: underline;
+}
+
+.detalle {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    padding: 20px;
+    background-color: #fffaf0;
+    border: 1px solid #9d9167;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgb(68 45 28 / 8%);
+}
+
+.imagenContenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+    padding: 24px;
+    background-color: #e8d1a7;
+    border-radius: 14px;
+}
+
+.imagen {
+    display: block;
+    max-width: 100%;
+    max-height: 420px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.informacion {
+    min-width: 0;
+    padding: 8px 0;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #743014;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.informacion h1 {
+    margin: 0 0 20px;
+    color: #442d1c;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+}
+
+.precio {
+    margin: 0 0 20px;
+    color: #743014;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.divisor {
+    height: 1px;
+    margin: 20px 0;
+    background-color: #9d9167;
+}
+
+.informacion h2 {
+    margin-bottom: 10px;
+    color: #442d1c;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.descripcion {
+    margin-bottom: 20px;
+    color: #66543d;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.stock {
+    margin-bottom: 24px;
+    color: #66543d;
+}
+
+.stock strong {
+    color: #743014;
+}
+
+.comprar {
+    max-width: 360px;
+}
+.estado,
+.error {
+    margin: 24px auto;
+    padding: 24px;
+    border-radius: 12px;
+    text-align:center;
+    line-height: 1.7;
+}
+.estado {
+    background-color: #e8d1a7;
+    color: #442d1c;
+}
+.error {
+    background-color: #fff0e9;
+    border: 1px solid #743014;
+    color: #743014;
+}
+@media (min-width: 768px) {
+    .detalle {
+        grid-template-columns: minmax(0, 0.9fr), minmax(0, 1.1fr);
+        align-items:center;
+        gap:40px;
+        padding: 32px;
+    }
+    .imagenContenedor {
+        min-height:400px;
+    }
+}

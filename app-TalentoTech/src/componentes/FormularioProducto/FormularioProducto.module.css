@@ -1,0 +1,143 @@
+
+.contenedor {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 16px 0 32px;
+    color: #442d1c;
+}
+
+.encabezado {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.subtitulo {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #743014;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.encabezado h1 {
+    margin: 0 0 12px;
+    color: #442d1c;
+}
+
+.encabezado p {
+    color: #66543d;
+    line-height: 1.7;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 24px;
+    background-color: #fffaf0;
+    border: 1px solid #9d9167;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgb(68 45 28 / 10%);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    color: #442d1c;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.campo input:not([type="file"]) {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+    color: #442d1c;
+    background-color: #ffffff;
+    border: 1px solid #9d9167;
+    border-radius: 9px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campo input:not([type="file"]):focus {
+    border-color: #743014;
+    box-shadow: 0 0 0 3px rgb(116 48 20 / 12%);
+}
+
+.entradaPrecio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.entradaPrecio > span {
+    color: #743014;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.entradaPrecio input {
+    flex: 1;
+}
+
+.archivo {
+    width: 100%;
+    padding: 12px;
+    color: #442d1c;
+    background-color: #e8d1a7;
+    border: 1px dashed #84592b;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.campo small {
+    color: #66543d;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.botonEnviar {
+    margin-top: 4px;
+    border: none;
+    border-radius: 10px;
+    background-color: #743014;
+    color: #e8d1a7;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.botonEnviar:hover:not(:disabled) {
+    background-color: #442d1c;
+    transform: translateY(-2px);
+}
+
+.botonEnviar:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.botonEnviar:focus-visible,
+.archivo:focus-visible {
+    outline: 3px solid #9d9167;
+    outline-offset: 3px;
+}
+
+.mensajeCarga {
+    margin: 0;
+    color: #743014;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        padding: 18px;
+    }
+}
