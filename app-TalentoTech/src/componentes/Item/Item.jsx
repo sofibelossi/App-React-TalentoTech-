@@ -1,9 +1,24 @@
-
+import {Link} from 'react-router-dom';
+import {useCart} from '../../context/CartContext';
 import { useState } from 'react';
 import styles from './Item.module.css';
 
-export function Item({ id, nombre, precio, stock }) {
+export function Item({ id, nombre, precio, stock, imagen }) {
+    const producto = { id, nombre, precio, stock, imagen };
     const [cantidad, setCantidad] = useState(0);
+
+    const { addToCart } = useCart();
+
+    const handleAddToCart = () => {
+    if (cantidad <= 0) {
+        alert('Seleccioná al menos una unidad.');
+        return;
+    }
+
+    addToCart(producto, cantidad);
+
+    alert(`Agregaste ${cantidad} unidades de ${nombre} al carrito.`);
+    };
 
     const incrementar = () => {
         if (cantidad < stock) {
@@ -17,14 +32,15 @@ export function Item({ id, nombre, precio, stock }) {
         }
     };
 
-    const agregarAlCarrito = () => {
+    /*const agregarAlCarrito = () => {
         if (cantidad === 0) {
             alert('Seleccioná al menos una unidad.');
             return;
         }
 
         alert(`Agregaste ${cantidad} unidades de ${nombre} al carrito.`);
-    };
+    };*/
+    
 
     return (
         <article className={`${styles.tarjeta} bg-white p-5 sm:p-6`}>
@@ -40,7 +56,9 @@ export function Item({ id, nombre, precio, stock }) {
                 <span className={styles.punto}></span>
                 Stock disponible: {stock}
             </p>
-
+            <Link to={`/producto/${producto.id}`} className={styles.detalle}>
+                Ver detalle
+            </Link>
             <div className={styles.controles}>
                 <button
                     type="button"
@@ -68,9 +86,9 @@ export function Item({ id, nombre, precio, stock }) {
             <button
                 type="button"
                 className={`${styles.botonCarrito} w-full py-3 px-4`}
-                onClick={agregarAlCarrito}
+                onClick={handleAddToCart}
             >
-                Agregar al carrito
+                Agregar {cantidad} al carrito
             </button>
         </article>
     );

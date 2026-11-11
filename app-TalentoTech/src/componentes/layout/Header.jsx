@@ -2,8 +2,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
+import {useCart} from '../../context/CartContext';
 
 function Header() {
+  const { getCartQuantity } = useCart();
+  const totalItems = getCartQuantity();
   return (
     <header className={`${styles.header} w-full px-6 py-5`}>
       <h1 className="text-2xl sm:text-3xl font-bold">
@@ -33,6 +36,13 @@ function Header() {
           <li>
             <Link className={styles.navLink} to="/alta-productos">
               Alta de productos
+            </Link>
+          </li>
+
+          <li>
+            <Link className={styles.navLink} to="/carrito">
+              Carrito {totalItems > 0 && 
+              <span>{totalItems}</span>}
             </Link>
           </li>
         </ul>
